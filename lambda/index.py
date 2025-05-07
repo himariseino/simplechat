@@ -7,11 +7,11 @@ import re  # 正規表現モジュールをインポート
 # from botocore.exceptions import ClientError
 
 # FastAPIのエンドポイントURL
-FASTAPI_URL = os.environ.get("FASTAPI_URL", "")
+FASTAPI_URL = os.environ.get("FASTAPI_URL", "https://6265-34-87-2-35.ngrok-free.app")
 
 def lambda_handler(event, context):
     try:
-        
+
         print("Received event:", json.dumps(event))
 
         # Cognitoで認証されたユーザー情報を取得
